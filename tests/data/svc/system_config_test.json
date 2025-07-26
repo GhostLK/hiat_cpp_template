@@ -1,0 +1,10 @@
+{
+    "system": {
+        "name": "test",
+        "idx": 1
+    },
+    "module": {
+        "name": "module_test",
+        "idx": 2
+    }
+}

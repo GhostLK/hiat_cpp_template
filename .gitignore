@@ -1,0 +1,21 @@
+*.dSYM
+*.o
+*.gcno
+*.gcda
+.DS_Store
+*.deb
+
+/.idea
+/cmake-build-*
+
+# Visual Studio / Visual Studio Code
+/.vs/
+/.vscode/
+/out/
+
+# clangd cache
+/.cache/
+/.clangd/
+
+# build directories (vscode-cmake-tools, user-defined, ...)
+/build*/

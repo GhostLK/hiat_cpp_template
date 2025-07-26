@@ -1,0 +1,24 @@
+[Unit]
+Description=Tracker Test Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/opt/TrackerTestServer
+ExecStart=/opt/TrackerTestServer/heartbeat_monitor
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# ENV variables
+Environment=LD_LIBRARY_PATH=/opt/TrackerTestServer/lib
+
+# Resource limitation
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

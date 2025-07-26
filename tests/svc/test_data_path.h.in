@@ -1,0 +1,4 @@
+#pragma once
+
+#define TEST_DATA_DIR "@TEST_DATA_DIR@"
+#define TEST_JSON_PATH "@TEST_JSON_PATH@"

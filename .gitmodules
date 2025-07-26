@@ -1,0 +1,24 @@
+[submodule "third_party/asio"]
+	path = third_party/asio
+	url = ssh://git@gitlab.hiat.internal:2424/hiat/asio.git
+[submodule "third_party/spdlog"]
+	path = third_party/spdlog
+	url = ssh://git@gitlab.hiat.internal:2424/hiat/spdlog.git
+[submodule "third_party/memcheck-cover"]
+	path = third_party/memcheck-cover
+	url = ssh://git@gitlab.hiat.internal:2424/hiat/memcheck-cover.git
+[submodule "third_party/doxygen-awesome-css"]
+	path = third_party/doxygen-awesome-css
+	url = ssh://git@gitlab.hiat.internal:2424/hiat/doxygen-awesome-css.git
+[submodule "third_party/benchmark"]
+	path = third_party/benchmark
+	url = ssh://git@gitlab.hiat.internal:2424/hiat/benchmark.git
+[submodule "third_party/googletest"]
+	path = third_party/googletest
+	url = ssh://git@gitlab.hiat.internal:2424/hiat/googletest.git
+[submodule "third_party/json"]
+	path = third_party/json
+	url = ssh://git@gitlab.hiat.internal:2424/hiat/json.git
+[submodule "third_party/tracy"]
+	path = third_party/tracy
+	url = ssh://git@gitlab.hiat.internal:2424/hiat/tracy.git

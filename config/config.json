@@ -1,0 +1,6 @@
+{
+    "system": {
+        "log_level": "info",
+        "log_file": "seeker.log"
+    }
+}
