@@ -18,7 +18,6 @@ protected:
     }
 
     void simulate_work(int milliseconds) {
-        SX_PROFILER_FUNC();
         auto start = std::chrono::high_resolution_clock::now();
         while (true) {
             auto now = std::chrono::high_resolution_clock::now();

@@ -19,3 +19,5 @@
 
 # build directories (vscode-cmake-tools, user-defined, ...)
 /build*/
+
+/compile_commands.json

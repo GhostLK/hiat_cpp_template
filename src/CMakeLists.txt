@@ -1,10 +1,7 @@
-include(Coverage)
-include(Doxygen)
+# include(Doxygen)
 
 add_subdirectory(app)
 add_subdirectory(svc)
-
-Doxygen(tracker  src/tracker docs-tmp)
 
 # ============================================================================
 # Manage dependencies
