@@ -3,7 +3,6 @@
 #include "logger_service.h"
 #include "config_service.h"
 #include "profiler_service.h"
-#include "error_service.h"
 #include "system_resource_service.h"
 #include <string>
 

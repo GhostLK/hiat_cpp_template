@@ -8,5 +8,9 @@ target_include_directories(seeker
     PRIVATE
         ${CMAKE_CURRENT_BINARY_DIR}    
 )
+target_link_libraries(seeker
+    PRIVATE
+        common
+)
 
 configure_file(config_path.h.in ${CMAKE_CURRENT_BINARY_DIR}/config_path.h)

@@ -18,7 +18,8 @@ SVC (Service) 是一个研发团队维护的轻量级的 C++ 服务库，提供�
 所有函数在main函数进行统一初始化，初始化过程将会读取配置文件，并设置日志等级
 
 ```cpp
-
+SystemConfig sys_config;
+SX_INIT_SERVICES(CONFIG_PATH, sys_config);
 ```
 
 ## 1. 配置服务 (ConfigService)
@@ -193,6 +194,8 @@ namespace sx::level {
 
 ### 使用方法
 
+注意，需统一在 `common/error_code.h`, `common/error_code.cpp`  下进行注册
+
 ```cpp
 #include "error_service.h"
 
@@ -233,7 +236,7 @@ void init_errors() {
 }
 
 // 4. 使用错误码
-sx::ErrorCode connect_to_server() {
+SX_ErrorCode connect_to_server() {
     if (connection_timeout) {
         return SX_MAKE_ERROR_CODE(network, NetworkError::CONNECTION_TIMEOUT);
     }
@@ -243,7 +246,7 @@ sx::ErrorCode connect_to_server() {
     return sx::SUCCESS;
 }
 
-sx::ErrorCode execute_query(const std::string& sql) {
+SX_ErrorCode execute_query(const std::string& sql) {
     if (syntax_error) {
         return SX_MAKE_ERROR_CODE(database, DatabaseError::QUERY_SYNTAX_ERROR);
     }

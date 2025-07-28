@@ -5,7 +5,6 @@ configure_file(${CMAKE_CURRENT_LIST_DIR}/test_data_path.h.in ${CMAKE_CURRENT_BIN
 
 add_executable(svc_test 
     config_service_test.cpp
-    error_service_test.cpp
     logger_service_test.cpp
     profiler_service_test.cpp
 )

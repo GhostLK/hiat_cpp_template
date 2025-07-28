@@ -1,7 +1,7 @@
 #include <iostream>
 #include "config_path.h"
 #include "svc.h"
-
+#include "common/error_code.h"
 
 struct SystemConfig {
     std::string log_file;
@@ -22,5 +22,6 @@ int main(int argc, char* argv[]) {
     // Run some functions
     // ...
 
-    return 0;
+    SX_LOG_INFO(sx_error_code_to_str(SX_ERR_SEEKER_COMMON_OK));
+    return  SX_ERR_SEEKER_COMMON_OK;
 }

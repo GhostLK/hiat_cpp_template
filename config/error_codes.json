@@ -1,0 +1,33 @@
+{
+    "modules": [
+      {
+        "name": "SEEKER",
+        "id": 0,
+        "submodules": [
+          {
+            "name": "COMMON",
+            "id": 0,
+            "errors": [
+              { "name": "OK", "code": 0, "msg": "No error" },
+              { "name": "UNKNOWN", "code": 1, "msg": "Unknown error" },
+              { "name": "INVALID_PARAM", "code": 2, "msg": "Invalid parameter" }
+            ]
+          },
+          {
+            "name": "MODULE1",
+            "id": 1,
+            "errors": [
+              { "name": "OK", "code": 0, "msg": "No error" }
+            ]
+          },
+          {
+            "name": "MODULE2",
+            "id": 2,
+            "errors": [
+              { "name": "OK", "code": 0, "msg": "No error" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
