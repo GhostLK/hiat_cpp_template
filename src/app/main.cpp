@@ -2,6 +2,7 @@
 #include "config_path.h"
 #include "svc.h"
 #include "common/error_code.h"
+#include "system_resource_service.h"
 
 struct SystemConfig {
     std::string log_file;
@@ -18,6 +19,9 @@ int main(int argc, char* argv[]) {
     SX_LOG_INFO("===========================================");
     SX_LOG_INFO("============== Start running ==============");
     SX_LOG_INFO("===========================================");
+
+    // Allocate CPU cores
+    // SX_ALLOCATE_CPU_CORES({0, 1, 2, 3, 4, 5, 6, 7});
 
     // Run some functions
     // ...
