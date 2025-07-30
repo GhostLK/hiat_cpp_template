@@ -1,24 +1,24 @@
 [submodule "third_party/asio"]
 	path = third_party/asio
-	url = ssh://git@gitlab.hiat.internal:2424/hiat/asio.git
+	url = https://github.com/chriskohlhoff/asio
 [submodule "third_party/spdlog"]
 	path = third_party/spdlog
-	url = ssh://git@gitlab.hiat.internal:2424/hiat/spdlog.git
+	url = https://github.com/gabime/spdlog
 [submodule "third_party/memcheck-cover"]
 	path = third_party/memcheck-cover
-	url = ssh://git@gitlab.hiat.internal:2424/hiat/memcheck-cover.git
+	url = https://github.com/Farigh/memcheck-cover
 [submodule "third_party/doxygen-awesome-css"]
 	path = third_party/doxygen-awesome-css
-	url = ssh://git@gitlab.hiat.internal:2424/hiat/doxygen-awesome-css.git
+	url = https://github.com/jothepro/doxygen-awesome-css
 [submodule "third_party/benchmark"]
 	path = third_party/benchmark
-	url = ssh://git@gitlab.hiat.internal:2424/hiat/benchmark.git
+	url = https://github.com/google/benchmark
 [submodule "third_party/googletest"]
 	path = third_party/googletest
-	url = ssh://git@gitlab.hiat.internal:2424/hiat/googletest.git
+	url = https://github.com/google/googletest
 [submodule "third_party/json"]
 	path = third_party/json
-	url = ssh://git@gitlab.hiat.internal:2424/hiat/json.git
+	url = https://github.com/nlohmann/json
 [submodule "third_party/tracy"]
 	path = third_party/tracy
-	url = ssh://git@gitlab.hiat.internal:2424/hiat/tracy.git
+	url = https://github.com/wolfpld/tracy
